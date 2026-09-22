@@ -31,8 +31,7 @@ Each Excel workbook contains one worksheet of time-stamped wind observations. Th
 | Column | Meaning |
 | --- | --- |
 | `Date` | Timestamp field in the Indiana workbook; not present in the Hawaii workbook. |
-| `#YY` / `YY` | Year field: `#YY` in the Hawaii workbook, `YY` in the Indiana workbook. |
-| `MM`, `DD`, `hh`, `mm` | Month, day, hour, and minute fields. |
+| `YY`, `MM`, `DD`, `hh`, `mm` | Year, month, day, hour, and minute fields. |
 | `WDIR` | Meteorological wind-from direction, in degrees clockwise from true north. |
 | `WSPD` | Source wind speed in m/s; measurement height must be documented for each site. |
 | `WSPD_80` | Workbook-derived wind speed in m/s at an 80 m reference height. |
