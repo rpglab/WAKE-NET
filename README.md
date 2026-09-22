@@ -7,6 +7,7 @@ WAKE-NET: Wake-Aware Wind Farm Layout and Sizing Optimization Framework
 This repository shares the Python implementation and example wind datasets associated with:
 
 **Ann Mary Toms and Xingpeng Li**, "WAKE-NET: A 3D-wake-aware economic turbine layout and cabling optimization framework for multi-capacity multi-hub-height wind farms serving grid-scale and industrial power systems," *Renewable Energy*, vol. 273, article 126078, 2026.  
+
 **DOI:** https://doi.org/10.1016/j.renene.2026.126078  
 **Paper page:** https://rpglab.github.io/papers/AnnT-WakeNET/
 
