@@ -28,16 +28,14 @@ The code is implemented in Python using Jupyter Notebook.
 
 Each Excel workbook contains one worksheet of time-stamped wind observations. The first row contains the variable names, the second row contains the corresponding descriptions or units, and the remaining rows contain the wind measurements.
 
-| Column | Unit/Format | Description |
-| `Date` | Date and time | Timestamp associated with the wind observation. This is stored as a date-time serial value and displayed using a date-time format. |
-| `YY` | Year | Four-digit year extracted from the `Date` column. |
-| `MM` | Month | Calendar month extracted from `Date`, ranging from 1 to 12. |
-| `DD` | Day | Day of the month extracted from `Date`. |
-| `hh` | Hour | Hour of the observation in 24-hour format, ranging from 0 to 23. |
-| `mm` | Minute | Minute of the observation, ranging from 0 to 59. |
-| `WDIR` | Degrees true (`degT`) | Wind direction measured clockwise from true north. A value of 0° or 360° represents north, 90° represents east, 180° represents south, and 270° represents west. The value identifies the direction from which the wind is blowing. |
-| `WSPD` | m/s | Wind speed at the 10 m reference measurement height.  |
-| `WSPD_80` | m/s | Wind speed extrapolated from 10 m to an 80 m reference height using a logarithmic wind profile |
+| Column | Meaning |
+| --- | --- |
+| `Date` | Timestamp field in the Indiana workbook; not present in the Hawaii workbook. |
+| `#YY` / `YY` | Year field: `#YY` in the Hawaii workbook, `YY` in the Indiana workbook. |
+| `MM`, `DD`, `hh`, `mm` | Month, day, hour, and minute fields. |
+| `WDIR` | Meteorological wind-from direction, in degrees clockwise from true north. |
+| `WSPD` | Source wind speed in m/s; measurement height must be documented for each site. |
+| `WSPD_80` | Workbook-derived wind speed in m/s at an 80 m reference height. |
 
 Users applying WAKE-NET to another location should retain the required column names—particularly `WDIR`, `WSPD`, and `WSPD_80`—or update the corresponding column references in `WAKENET.ipynb`.
 
