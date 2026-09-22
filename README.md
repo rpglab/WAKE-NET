@@ -30,11 +30,11 @@ Each Excel workbook contains one worksheet of time-stamped wind observations. Th
 
 | Column | Meaning |
 | --- | --- |
-| `Date` | Timestamp field in the Indiana workbook; not present in the Hawaii workbook. |
+| `Date` | Timestamp associated with the wind observation. This is stored as a date-time serial value and displayed using a date-time format.  |
 | `YY`, `MM`, `DD`, `hh`, `mm` | Year, month, day, hour, and minute fields. |
-| `WDIR` | Meteorological wind-from direction, in degrees clockwise from true north. |
-| `WSPD` | Source wind speed in m/s; measurement height must be documented for each site. |
-| `WSPD_80` | Workbook-derived wind speed in m/s at an 80 m reference height. |
+| `WDIR` | Wind direction measured clockwise from true north. A value of 0° or 360° represents north, 90° represents east, 180° represents south, and 270° represents west. The value identifies the direction from which the wind is blowing. |
+| `WSPD` | Wind speed at the 10 m reference measurement height. |
+| `WSPD_80` | Wind speed extrapolated from 10 m to an 80 m reference height using a logarithmic wind profile. |
 
 Users applying WAKE-NET to another location should retain the required column names—particularly `WDIR`, `WSPD`, and `WSPD_80`—or update the corresponding column references in `WAKENET.ipynb`.
 
