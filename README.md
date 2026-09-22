@@ -19,7 +19,7 @@ The model utilizes historical wind speed and wind direction data together with t
 
 The code is implemented in Python using Jupyter Notebook.
 
-* `WAKENET.ipynb` contains the complete workflow, including wind-resource processing, wake modeling, turbine-layout optimization, turbine selection, cable routing, economic evaluation, and visualization.
+* `WAKENET.ipynb` contains the complete workflow, including wind resource processing, wake modeling, turbine layout optimization, turbine selection, cable routing, economic evaluation, and visualization.
 * `OnshoreIN_all.xlsx` contains the historical offshore wind observations for region `Onshore Indiana`.
 * `OffshoreHI_all.xlsx` contains the historical onshore wind observations for region `Offshore Hawaii`.
 
